@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    background-color: #aaa;
+}
+img{
+    width: 100px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    padding: 10px 20px;
+    background-color: white;
+}
+nav a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #333;
+    padding: 0 5px;
+}
+
+.menu-hamburguer{
+    display: none;
+}
+
+
+@media(max-width: 700px){
+    nav{
+        background-color: white;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        text-align: right;
+        top: 121px;
+        width: 100%;
+        display: block;
+        transform: translateY(0);
+    }
+
+nav.ativa{
+    transform: translateY(200);
+        display:block;
+}
+
+    nav a{
+       display: block;
+       padding: 5px 20px;
+    }
+    .menu-hamburguer{
+    display: block;
+    }
+}
+
